@@ -1,0 +1,87 @@
+body{
+	background-color: #e3f2fd;
+}
+.navbar{
+	background-color: #2196f3;
+
+}
+ul.nav li > a {
+  color: #FFFFFF;
+  font-weight:bold;
+   background-color:#2196f3;
+
+}
+ul.nav li > a:hover {
+  color: #FFFFFF;
+  opacity: .7;
+  background-color:#2196f3;
+
+
+}
+.navbar-brand{
+	color:#FFFFFF;
+	font-weight: bold;
+}
+.navbar-brand:hover{
+	color:#FFFFFF;
+	font-weight: bold;
+	opacity: .7;
+}
+.list-group-item{
+	font-weight: bold;
+}
+h3{
+	font-weight: bold;
+	text-decoration: underline;
+}
+footer{
+	margin: 30px;
+
+}
+ul.nav li > a >i.fa{
+	margin: 5px;
+
+}
+ul.nav li.active{
+	
+	opacity: .7;
+
+}
+h4:hover{
+	color: #3b5998;
+	opacity: .9;
+}
+footer > ul >li {
+	list-style: none;
+	display: inline-block;
+	margin-right:10px;
+
+}
+.jumbotron{
+	background-color: #bbdefb;
+
+}
+.partation{
+  border-right: 1px solid #90caf9;
+  height: 700px;
+
+}
+ul.list-group li.list-group-item img{
+	height: 90px;
+	width: auto;
+}
+ul.list-group li.list-group-item a>h4{
+
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 20px;
+}
+.navbar-toggle{
+	color: #ffffff;
+}
+.navbar-toggle span{
+	background-color: #FFFFFF;
+}
+h1{
+	color: #2196f3;
+}
