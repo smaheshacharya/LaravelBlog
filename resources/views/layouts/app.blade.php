@@ -18,13 +18,19 @@
 
 </head>
 <body>
-    <div id="app">
+    
        @include('inc.navbar')
        <div class="container">
-            @include('inc.messages')
-            @yield('content')
+           <div class="row">
+               <div class="col-md-8">
+                @include('inc.messages')
+                @yield('content')
+               </div>
+                @include('inc.sidebar')
+               
+           </div>
+            
         </div>
-    </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

@@ -27,13 +27,19 @@
 		      <li class="{{ Request::is('/') ? 'active' : '' }}" ><a href="{{url('/')}}"><i class="fa fa-home"></i>Home</a></li>
 		      <li class="{{ Request::is('services') ? 'active' : '' }}"><a href="{{url('/services')}}"><i class="fa fa-file"></i>Bio</a></li>
 		      <li class="{{ Request::is('posts') ? 'active' : '' }}"><a href="{{url('/posts')}}"><i class="fa fa-book"></i>Blog</a></li>
-		    </ul>
+              <li class="{{ Request::is('shop') ? 'active' : '' }}"><a href="{{url('/shop')}}"><i class="fa fa-shopping-bag"></i>Shop</a></li>
+
+            </ul>
 
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
                 @if (Auth::guest())
+            <li><a href="{{route('product.shopingCart')}}"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Your Cart <span class="badge badge-danger">{{Session::has('cart')?Session::get('cart')->TotalQtn:''}}</span>
+                    </a>
+                      </li>
 {{--                     <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li> --}}
                 @else

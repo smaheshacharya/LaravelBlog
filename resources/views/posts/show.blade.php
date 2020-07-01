@@ -30,7 +30,8 @@
 		{!!Form::close()!!}
 	@endif
 @endif
-
+<div class="fb-comments" data-href="{{Request::url()}}" data-width="" data-numposts="5">
+</div>
 @endsection
 {{-- <div class="fb-comments" data-href="http://localhost/blog/public/posts/23" data-width="" data-numposts="5"></div> --}}
-<div class="fb-comments" data-href="{{Request::url()}}" data-width="" data-numposts="5"></div>
+
